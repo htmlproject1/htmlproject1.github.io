@@ -1,0 +1,166 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 0;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    color: #ee9b00;
+}
+
+#cta .description {
+    font-size: 1rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #e9a209;
+    font-size:  1.563rem;
+}
+
+.section-subtitle {
+    font-size: 2.1855rem;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 60%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 80%;
+    width: fit-content;
+}
+
+
+
+.shape {
+    background-color: #ca6702;
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    border-radius: 50% 50% 50% 50%;
+    top: 250px;
+    right: 0;
+    z-index: 1;
+}
+
+
+.shape::before,
+.shape::after {
+    content: '';
+    position: absolute;
+    background-color: #ca6702;
+    border-radius: 50%;
+}
+
+.shape::before {
+    width: 450px;
+    height: 450px;
+    top: -140px;
+    left: -150px;
+}
+
+.shape::after {
+    width: 450px;
+    height: 450px;
+    top: -5px;
+    left: 90px;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    #cta .title {
+        font-size: 8vw;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
+.dog-one {
+    height: 200px;
+}
