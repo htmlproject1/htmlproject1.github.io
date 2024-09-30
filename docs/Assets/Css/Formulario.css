@@ -14,7 +14,7 @@
 
 body {
     width: 90%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .container {
     width: 80%;
-    height: 90vh;
+    height: 90%;
     padding: 10px;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
@@ -110,6 +110,8 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    width: 100%;
+    
 
 }
 
@@ -184,4 +186,46 @@ body {
     color: #fff;
 }
 
-
+@media screen and (max-width: 850px) {
+   
+    .container {
+        display: inline;
+    }
+    .form {
+        width: 100%;
+    }
+    .form-image {
+        width: 100%;
+    }
+    .input-box {
+        width: 190px;
+    }
+}
+@media screen and (max-width: 690px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        display: inline;
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+    }
+    .form-image {
+        width: 100%;
+    }
+    .input-box {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .form-image {
+        width: 100%;
+    }
+    .form-image img {
+        width: 18rem;
+    }
+    
+}
