@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/Css/Formulario.css">
     <title>Formulário de Cadastro</title>
+    <script src="Javascript/Script.js" defer></script>
 
 </head>
 <body>
@@ -13,81 +14,60 @@
             <img src="Assets/Img/undraw_Dog_c7i6.png" alt="Form image">
         </div>
         <div class="form">
-            <form action="#">
+            <form action="form.php" method="post" enctype="multipart/form-data">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Cadastrar cachorro</h1>
                     </div>
-                    <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
-                    </div>
+                    
                 </div>
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="firstname">Primeiro nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o nome do cachorro" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <label for="peso">Peso</label>
+                        <input id="peso" type="text" name="peso" placeholder="Digite o peso do cachorro" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <label for="idade">Idade</label>
+                        <input id="idade" type="text" name="idade" placeholder="Digite a idade do cachorro" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="Digite seu número" required>
+                        <label for="raca">Raça</label>
+                        <input id="raca" type="text" name="raca" placeholder="Digite a raça do cachorro" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                        <label for="cor">Cor</label>
+                        <input id="cor" type="text" name="cor" placeholder="Digite a cor do cachorro" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="Confirmpassword">Confirme sua senha</label>
-                        <input id="Confirmpassword" type="password" name="Confirme" placeholder="Digite a senha novamente" required>
-                    </div>
-                </div>
-
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Gênero</h6>
+                        <label for="sexo">Sexo</label>
+                        <input id="sexo" type="text" name="sexo" placeholder="Digite o sexo do cachorro" required>
                     </div>
 
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" id="female" name="gender">
-                            <label for="female">Feminino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input type="radio" id="male" name="gender">
-                            <label for="male">Masculino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input type="radio" id="others" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input type="radio" id="none" name="gender">
-                            <label for="none">Prefiro não responder</label>
-                        </div>
+                    <div class="input-box">
+                        <label for="foto">Inserir foto</label>
+                        <input type="file" id="foto"  name="foto"  required>
                     </div>
+
+                
+
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a></button>
+                    <button type="submit" name="botao" id="cadastrar">Enviar</button>
                 </div>
             </form>
         </div>
     </div>
 </body>
 </html>
+
