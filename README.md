@@ -3,7 +3,7 @@ Matheus Oliveira da silva  RA:202402410474
 Bruno Henrique de Almeida Lima  RA:202402410733	
 
 Giovanni Garcia de Souza  RA:202102636728
-
+----------------------------------------------------------------------------
 Nosso trabalho teve a ideia de viabilizar a adoção de cachorros.
 
 Para isso utilizamos HTML,CSS,JavaScript,PHP,Banco de dados SQLite e Crude.
