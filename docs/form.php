@@ -1,7 +1,4 @@
  <?php /*
-    Este é um comentário
-    de várias linhas ou bloco
-    em PHP.
 
    try {
     $pdo = new PDO('sqlite:cachorro.sqlite');
